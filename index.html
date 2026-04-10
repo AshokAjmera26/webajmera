@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0f172a; color: #f8fafc; line-height: 1.6; }
+        
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 2rem 10%; background: #1e293b; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #38bdf8; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; }
+
+        /* Hero Section */
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 10%; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .hero span { color: #38bdf8; }
+        .hero p { font-size: 1.2rem; color: #94a3b8; max-width: 600px; }
+
+        /* Projects Section */
+        .section { padding: 5rem 10%; }
+        .section-title { font-size: 2rem; text-align: center; margin-bottom: 3rem; border-bottom: 2px solid #38bdf8; display: inline-block; width: auto; }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: #1e293b; padding: 20px; border-radius: 10px; transition: transform 0.3s; border: 1px solid #334155; }
+        .card:hover { transform: translateY(-10px); border-color: #38bdf8; }
+        .card h3 { margin-bottom: 10px; color: #38bdf8; }
+        .card a { color: #f8fafc; text-decoration: none; font-size: 0.9rem; font-weight: bold; display: inline-block; margin-top: 15px; }
+
+        /* Contact Section */
+        .contact { text-align: center; background: #1e293b; }
+        .btn { background: #38bdf8; color: #0f172a; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 20px; display: inline-block; }
+
+        /* Responsive */
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DevPortfolio</div>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/AshokAjmera26/webajmera.git.io" target="_blank">GitHub Link →</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>नमस्ते, मैं <span>[आपका नाम]</span> हूँ</h1>
+        <p>मैं एक Full-Stack Web Developer हूँ। मैं सुंदर और स्केलेबल वेब ऐप्स बनाना पसंद करता हूँ।</p>
+        <a href="#projects" class="btn">मेरा काम देखें</a>
+    </section>
+
+    <section class="section" id="projects">
+        <center><h2 class="section-title">प्रमुख प्रोजेक्ट्स</h2></center>
+        <div class="project-grid">
+            <div class="card">
+                <h3>E-commerce Website</h3>
+                <p>React और Node.js का उपयोग करके बनाई गई एक पूरी तरह रिस्पॉन्सिव शॉपिंग साइट।</p>
+                <a href="#">GitHub Link →</a>
+            </div>
+            <div class="card">
+                <h3>Weather App</h3>
+                <p>API का उपयोग करके रियल-टाइम मौसम की जानकारी देने वाला ऐप।</p>
+                <a href="#">GitHub Link →</a>
+            </div>
+            <div class="card">
+                <h3>Chat Application</h3>
+                <p>Socket.io का उपयोग करके बनाया गया रियल-टाइम मैसेजिंग प्लेटफॉर्म।</p>
+                <a href="#">GitHub Link →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <h2 class="section-title">संपर्क करें</h2>
+        <p>क्या आपके पास कोई प्रोजेक्ट है? चलिए बात करते हैं!</p>
+        <p>Email: <b>yourname@email.com</b></p>
+        <a href="mailto:yourname@email.com" class="btn">ईमेल भेजें</a>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; color: #64748b;">
+        &copy; 2024 [आपका नाम] | Made with ❤️
+    </footer>
+
+</body>
+</html>
